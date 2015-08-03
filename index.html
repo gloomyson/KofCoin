@@ -1,0 +1,43 @@
+﻿<html>
+	<head>
+		<title>GameII</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+        <div id="GameLoading" class="GameLayer">
+			<div class="LoadingDiv LoadingMsg">Now Loading...</div>
+			<div class="LoadingDiv LoadingBlock">
+				<div class="LoadedBlock"></div>
+			</div>
+		</div>
+		<div id="GameStart" class="GameLayer">
+            <div class="levelSelectionBg"></div>
+		</div>
+		<div id="GamePlay" class="GameLayer">
+            <!--<canvas id="GameBoard" width="1326px" height="580px" backgroundAlpha="0"></canvas>-->
+            <canvas id="GameBoard" backgroundAlpha="0"></canvas>
+		</div>
+		<div id="GameWin" class="GameLayer"></div>
+		<div id="GameLose" class="GameLayer"></div>
+
+		<script src="Utils/jquery.min.js"></script>
+        <script src="Utils/gFrame.js"></script>
+        <script src="Utils/sound.js"></script>
+        <script src="Utils/sourceLoader.js"></script>
+        <script src="Characters/Gobj.js"></script>
+		<script src="Characters/Athena.Gobj.js"></script>
+		<script src="Characters/Coin.Gobj.js"></script>
+        <script src="GameRule/Game.js"></script>
+        <script src="GameRule/Referee.js"></script>
+        <script src="GameRule/Levels.js"></script>
+		<script src="Controller/mouseController.js"></script>
+		<script src="Controller/keyController.js"></script>
+
+		<script>
+			//########## AutoStart ##########//
+            $('body')[0].onload=function(){
+                Game.init();
+            };
+		</script>
+	</body>
+</html>

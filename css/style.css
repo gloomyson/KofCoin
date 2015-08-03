@@ -1,0 +1,66 @@
+div.GameLayer{
+    width:97%;
+    height:95%;
+    position:absolute;
+    display:none;
+    border:5px solid black;
+}
+.GameLayer img{
+    width:100%;
+    height:100%;
+    position:absolute;
+    z-index:-1;//As background
+}
+#GameBoard{
+    //background:url('img/Bg/GamePlay.jpg') no-repeat;
+}
+#GameLoading{
+    text-align:center;
+    font:bold 25px Arial;
+    color:red;
+}
+.LoadingDiv{
+    width:60%;
+    height:6%;
+    position:absolute;
+    left:20%;
+}
+.LoadingMsg{
+    top:41%;
+    text-align:center;
+    font:bold 25px Georgia,Verdana;
+    color:blue;
+}
+.LoadingBlock{
+    top:47%;
+    background-color:gray;
+}
+.LoadedBlock{
+    width:0%;
+    height:100%;
+    position:absolute;
+    background-color:red;
+}
+.levelSelectionBg{
+    position:absolute;
+    left:30%;
+    bottom:0px;
+    width:40%;
+    height:250px;
+    margin:auto auto 0px auto;
+    background-color:gray;
+    opacity:0.8;
+    overflow:hidden;
+}
+.levelItem {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 30px;
+    border: 3px solid yellow;
+    margin-bottom: -3px;
+    text-align: center;
+    background-color: blue;
+    font: bold 24px Verdana, Georgia, Arial;
+    color: red;
+}
